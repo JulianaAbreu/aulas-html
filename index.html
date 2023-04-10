@@ -8,42 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Brasil - assistir a séries
         e filmes online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <article>
+    <!-- <article>
         <span>Novidade!</span>
         <p>Planos a partir de <strong>R$ 18,90.</strong></p>
         <div>
             <a href="https://www.netflix.com/signup">Saiba mais</a>
             <img src="images/saiba-mais-icon.svg" alt="Ícone Saiba mais">
         </div>
-    </article>
-    <header>
+    </article> -->
+    <header class="grid-container">
         <nav>
-            <img src="images/logo.svg" alt="Logo Netflix">
+            <img src="images/logo.svg" alt="Logo Netflix" class="logo">
             <div>
-                <select name="idioma">
+                <select name="idioma" id="select-idioma">
                     <option value="portugues">Português</option>
                     <option value="ingles">Inglês</option>
                 </select>
-                <a href="https://www.netflix.com/br/login">Entrar</a>
+                <a href="https://www.netflix.com/br/login" id="login-button">Entrar</a>
             </div>
         </nav>
-        <div>
+        <div class="hero-description">
             <h1>Filmes, séries e muito mais. Sem limites.</h1>
             <h3>Assista onde quiser. Cancele quando quiser.</h3>
             <p>Quer assistir? Informe seu email para criar ou
                 reiniciar sua assinatura.</p>
             <form>
-                <label for="email">Email</label>
+                <label for="email" id="label-email">Email</label>
                 <input type="email" name="email" id="email" required>
                 <span>Email obrigatório</span>
-                <input type="submit" value="Vamos lá >">
+                <input type="submit" value="Vamos lá >" >
             </form>
         </div>
     </header>
-    <section>
+    <section class="grid-container">
         <div>
             <h2>Aproveite na TV.</h2>
             <p>

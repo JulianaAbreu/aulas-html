@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(8, 8, 8, 0.8), rgba(37, 37, 37, 0.9)), url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 80vh;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container {
+    padding: 1rem 20rem;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+.hero-description h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.hero-description h3 {
+    margin: 1rem 0 1.5rem;
+}
+
+.hero-description p {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 150px;
+}
+
+#select-idioma {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.321);
+    padding: 8px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    margin-right: 1rem;
+}
+
+#login-button {
+    text-decoration: none;
+    background-color: #E50914;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#email {
+    width: 60%;
+    height: 90%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.456);
+    border-radius: 5px;
+}
+
+
+#label-email {
+    position: absolute;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: 5px;
+}
