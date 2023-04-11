@@ -42,6 +42,34 @@ header > nav {
 
 .hero-description p {
     margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.hero-description form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-description form span {
+    display: none;
+}
+
+.btn-assinar {
+    padding: 0.7rem 1.4rem;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #E50914;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-assinar:hover, #login-button:hover {
+    background-color: #e50914d3;
+    transition: .2s;
 }
 
 .logo {
@@ -70,17 +98,36 @@ header > nav {
 }
 
 #email {
-    width: 60%;
-    height: 90%;
-    background-color: transparent;
+    padding: 1rem 6rem;
     border: 1px solid rgba(255, 255, 255, 0.456);
     border-radius: 5px;
+    background-color: rgba(22, 22, 22, 0.516);
+    color: white;
 }
-
 
 #label-email {
     position: absolute;
     z-index: 1;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.614);
+}
+
+.aproveite-tv {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.aproveite-tv div h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.aproveite-tv div p {
+    font-size: 1.5rem;
+    width: 94%;
+    margin-top: 1rem;
 }
