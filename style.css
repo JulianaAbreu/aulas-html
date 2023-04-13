@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: black;
+    color: white;
+}
+
 header {
     background-image: linear-gradient(rgba(8, 8, 8, 0.8), rgba(37, 37, 37, 0.9)), url("images/hero.jpg");
     background-repeat: no-repeat;
@@ -114,20 +119,34 @@ header > nav {
     color: rgba(255, 255, 255, 0.614);
 }
 
-.aproveite-tv {
-    background-color: black;
-    color: white;
+.beneficios-content {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 4rem;
 }
 
-.aproveite-tv div h2 {
+section {
+    border-bottom: 8px solid rgb(72, 72, 72);
+}
+
+.beneficios-content div h2 {
     font-size: 3rem;
     font-weight: 800;
 }
 
-.aproveite-tv div p {
+.beneficios-content div p {
     font-size: 1.5rem;
     width: 94%;
     margin-top: 1rem;
+}
+
+
+.preview-video {
+    position: absolute;
+    top: 90px;
+    left: 53.6%;
+    overflow: hidden;
+    z-index: -1;
 }
