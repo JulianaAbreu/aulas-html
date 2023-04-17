@@ -145,8 +145,59 @@ section {
 
 .preview-video {
     position: absolute;
-    top: 90px;
-    left: 53.6%;
     overflow: hidden;
     z-index: -1;
+}
+
+#orientation-tv-video {
+    top: 90px;
+    left: 53.6%;
+}
+
+#orientation-devices-video {
+    top: 80px;
+    left: 23%;
+    width: 365px;
+}
+
+.devices-image {
+    width: 600px;
+    margin-top: 2rem;
+}
+
+figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#card-device {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(72, 72, 72);
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    background-color: black;
+}
+
+#card-device div p {
+    font-size: 14px;
+    color: #0071eb;
+    
+    margin-top: 0px;
+}
+
+#card-device img {
+    width: 60px;
+    margin-right: 1rem;
+}
+
+.animation {
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif") center center no-repeat;
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
 }

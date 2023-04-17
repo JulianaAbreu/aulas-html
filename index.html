@@ -55,7 +55,7 @@
         </div>
         <div>
             <img src="images/tv.png" alt="TV">
-            <div class="preview-video">
+            <div class="preview-video" id="orientation-tv-video">
                 <video playsinline muted autoplay loop>
                     <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">    
                 </video>
@@ -65,8 +65,12 @@
 
     <section class="grid-container beneficios-content">
         <div>
-            <img src="images/devices.png" alt="Dispositivos">
-            <video></video>
+            <img src="images/devices.png" alt="Dispositivos" class="devices-image">
+            <div class="preview-video" id="orientation-devices-video">
+                <video playsinline muted autoplay loop>
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
+                </video>
+            </div>
         </div>
         <div>
             <h2>Assista quando quiser.</h2>
@@ -89,14 +93,14 @@
 
     <section class="grid-container beneficios-content">
         <figure>
-            <img src="images/celular.png" alt="Dispositivo móvel">
-            <figcaption>
+            <img src="images/celular.jpg" alt="Dispositivo móvel">
+            <figcaption id="card-device">
                 <img src="images/stranger-things.png" alt="Stranger Things">
                 <div>
                     <h5>Stranger Things</h5>
                     <p>Download em andamento...</p>
                 </div>
-                <span class="animacao"></span>
+                <span class="animation"></span>
             </figcaption>
         </figure>
         <div>
@@ -105,7 +109,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="grid-container">
         <h2>Perguntas frequentes</h2>
         <ul>
             <li>
