@@ -57,7 +57,8 @@
             <img src="images/tv.png" alt="TV">
             <div class="preview-video" id="orientation-tv-video">
                 <video playsinline muted autoplay loop>
-                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">    
+                    <source
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
                 </video>
             </div>
         </div>
@@ -68,7 +69,8 @@
             <img src="images/devices.png" alt="Dispositivos" class="devices-image">
             <div class="preview-video" id="orientation-devices-video">
                 <video playsinline muted autoplay loop>
-                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
+                    <source
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
                 </video>
             </div>
         </div>
@@ -109,25 +111,47 @@
         </div>
     </section>
 
-    <section class="grid-container">
+    <section class="grid-container questions-section">
         <h2>Perguntas frequentes</h2>
         <ul>
             <li>
-                <button>O que é a Netflix?</button>
+                <button>
+                   <span>O que é a Netflix?</span> 
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="default-ltr-cache-vva3m3 e1tuurd64" data-name="Add" alt="">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
                 <p>A Netflix é um serviço de streaming que oferece uma ampla
                     variedade de séries, filmes e documentários premiados
                     em milhares de aparelhos conectados à internet.
                     <a href="#">Saiba mais</a>
                 </p>
+               
             </li>
             <li>
-                <button>Quanto custa a Netflix?</button>
+                <button>
+                    <span>Quanto custa a Netflix?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="default-ltr-cache-vva3m3 e1tuurd64" data-name="Add" alt="">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
                 <p>A Netflix é um serviço de streaming que oferece uma ampla
                     variedade de séries, filmes e documentários premiados
                     em milhares de aparelhos conectados à internet.</p>
             </li>
             <li>
-                <button>Quais são as diferenças de um plano com anúncios?</button>
+                <button>
+                    <span>Quais são as diferenças de um plano com anúncios?</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="default-ltr-cache-vva3m3 e1tuurd64" data-name="Add" alt="">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
                 <p>A Netflix é um serviço de streaming que oferece uma ampla
                     variedade de séries, filmes e documentários premiados
                     em milhares de aparelhos conectados à internet.</p>
@@ -136,9 +160,9 @@
         <form>
             <p>Quer assistir? Informe seu email para
                 criar ou reiniciar sua assinatura.</p>
-            <label for="email">Email</label>
+            <label for="email" id="label-email">Email</label>
             <input type="email" name="email" id="email">
-            <input type="submit" value="Vamos lá >">
+            <input type="submit" value="Vamos lá >" class="btn-assinar">
         </form>
     </section>
 
@@ -199,7 +223,7 @@
                     <a href="https://help.netflix.com">Preferências de cookies</a>
                 </li>
                 <li>
-                    <a href="https://help.netflix.com">  
+                    <a href="https://help.netflix.com">
                         Teste de velocidade
                     </a>
                 </li>

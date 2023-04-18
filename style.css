@@ -201,3 +201,48 @@ figure {
     height: 3rem;
     background-size: 100%;
 }
+
+.questions-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 1rem 0;
+}
+
+/* Acessando o elemento button a partir dos elementos pai */
+.questions-section ul li button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+.questions-section ul li button:hover {
+    background-color: rgb(80, 80, 80);
+    transition: .4s;
+}
+
+.questions-section ul li p {
+    background-color: rgb(40, 40, 40);
+    margin-top: 1px;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.questions-section form {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.questions-section form p {
+    margin: 3rem 0 2rem;
+    font-size: 20px;
+}
