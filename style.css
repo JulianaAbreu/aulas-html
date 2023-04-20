@@ -81,7 +81,7 @@ header > nav {
     width: 150px;
 }
 
-#select-idioma {
+.select-idioma {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.321);
     padding: 8px 28px;
@@ -210,12 +210,11 @@ figure {
 }
 
 /* Acessando o elemento button a partir dos elementos pai */
-.questions-section ul li button {
+.questions-section ul li details summary {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
     text-align: left;
+    align-items: center;
     padding: 1.5rem;
     background-color: rgb(40, 40, 40);
     color: white;
@@ -225,7 +224,19 @@ figure {
     margin-top: 8px;
 }
 
-.questions-section ul li button:hover {
+.questions-section ul li details summary span:nth-child(2)  {
+    font-size: 2.5rem;
+    transform: rotate(0);
+    transform-origin: center;
+    transition: 0.2s transform ease
+}
+
+.questions-section ul li details[open] > summary > span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: 0.4s transform ease;
+}
+
+.questions-section ul li details summary:hover {
     background-color: rgb(80, 80, 80);
     transition: .4s;
 }
@@ -245,4 +256,36 @@ figure {
 .questions-section form p {
     margin: 3rem 0 2rem;
     font-size: 20px;
+}
+
+footer, footer a, #footer-links > ul > li > a {
+    color: rgba(255, 255, 255, 0.614);
+}
+
+footer {
+    padding: 4rem 20rem;
+}
+ 
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#footer-links ul li {
+    margin-bottom: 1rem;
+}
+
+footer p:nth-child(4), footer select {
+    padding-top: 2rem;
+}
+
+.tab {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion {
+    overflow: hidden;
 }

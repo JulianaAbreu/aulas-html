@@ -24,7 +24,7 @@
         <nav>
             <img src="images/logo.svg" alt="Logo Netflix" class="logo">
             <div>
-                <select name="idioma" id="select-idioma">
+                <select name="idioma" class="select-idioma">
                     <option value="portugues">Português</option>
                     <option value="ingles">Inglês</option>
                 </select>
@@ -115,46 +115,49 @@
         <h2>Perguntas frequentes</h2>
         <ul>
             <li>
-                <button>
-                   <span>O que é a Netflix?</span> 
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="default-ltr-cache-vva3m3 e1tuurd64" data-name="Add" alt="">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </button>
-                <p>A Netflix é um serviço de streaming que oferece uma ampla
-                    variedade de séries, filmes e documentários premiados
-                    em milhares de aparelhos conectados à internet.
-                    <a href="#">Saiba mais</a>
-                </p>
-               
+                <details>
+                    <summary>
+                        <span>O que é a Netflix?</span>
+                        <span>+</span>
+                    </summary>
+
+                    <div>
+                        <p>A Netflix é um serviço de streaming que oferece uma ampla
+                            variedade de séries, filmes e documentários premiados
+                            em milhares de aparelhos conectados à internet.
+                            <a href="#">Saiba mais</a>
+                        </p>
+                    </div>
+                </details>
             </li>
             <li>
-                <button>
-                    <span>Quanto custa a Netflix?</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="default-ltr-cache-vva3m3 e1tuurd64" data-name="Add" alt="">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </button>
-                <p>A Netflix é um serviço de streaming que oferece uma ampla
-                    variedade de séries, filmes e documentários premiados
-                    em milhares de aparelhos conectados à internet.</p>
+                <details>
+                    <summary>
+                        <span>Quanto custa a Netflix?</span>
+                        <span>+</span>
+                    </summary>
+                    <div>
+                        <p>A Netflix é um serviço de streaming que oferece uma ampla
+                            variedade de séries, filmes e documentários premiados
+                            em milhares de aparelhos conectados à internet.</p>
+                    </div>
+                </details>
+
             </li>
             <li>
-                <button>
-                    <span>Quais são as diferenças de um plano com anúncios?</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="default-ltr-cache-vva3m3 e1tuurd64" data-name="Add" alt="">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </button>
-                <p>A Netflix é um serviço de streaming que oferece uma ampla
-                    variedade de séries, filmes e documentários premiados
-                    em milhares de aparelhos conectados à internet.</p>
+                <details>
+                    <summary>
+                        <span>Quais são as diferenças de um plano com anúncios?</span>
+                        <span>+</span>
+
+                    </summary>
+                    <div>
+                        <p>A Netflix é um serviço de streaming que oferece uma ampla
+                            variedade de séries, filmes e documentários premiados
+                            em milhares de aparelhos conectados à internet.</p>
+                    </div>
+                </details>
+
             </li>
         </ul>
         <form>
@@ -168,7 +171,7 @@
 
     <footer>
         <p>Dúvidas? Ligue <a href="#">0800 591 8942</a> </p>
-        <div>
+        <div id="footer-links">
             <ul>
                 <li>
                     <a href="https://help.netflix.com/pt/node/412">Perguntas frequentes</a>
@@ -229,7 +232,7 @@
                 </li>
             </ul>
         </div>
-        <select name="idioma">
+        <select name="idioma" class="select-idioma">
             <option value="portugues">Português</option>
             <option value="ingles">Inglês</option>
         </select>
