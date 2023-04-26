@@ -186,7 +186,6 @@ figure {
 #card-device div p {
     font-size: 14px;
     color: #0071eb;
-    
     margin-top: 0px;
 }
 
@@ -284,8 +283,76 @@ footer p:nth-child(4), footer select {
     position: absolute;
     opacity: 0;
     z-index: -1;
+ 
 }
 
 .accordion {
     overflow: hidden;
+}
+
+/* Versão para celular */
+@media (max-width: 600px) {
+   .grid-container {
+        padding: 1rem;
+   }
+
+   .hero-description {
+        text-align: center;
+   }
+
+   .hero-description form {
+        display: block;
+   }
+   
+   .beneficios-content {
+        flex-direction: column;
+   }
+
+   #orientation-tv-video {
+        width: 305px;
+        height: 165px;
+        top: 164px;
+        left: 12%;
+    }  
+    #orientation-devices-video {
+        width: 244px;
+        height: 154px;
+        left: 19%;
+    } 
+
+    .devices-image {
+        width: 380px;
+    }
+
+    .desenho-image {
+        width: 380px;
+    }
+
+    .phone-image {
+        width: 360px;
+    }
+
+    footer {
+        padding: 2rem 4rem;
+    }
+
+    .tv-image {
+        width: 333px;
+    }
+
+    .hero-description h1 {
+        font-size: 2rem;
+    }
+
+    .btn-assinar {
+        margin-top: 1rem;
+    }
+
+    .beneficios-content div h2 {
+        font-size: 2rem;
+    }
+
+    .beneficios-content div p {
+        font-size: 1rem;
+    }
 }
