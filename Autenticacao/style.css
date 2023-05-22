@@ -2,3 +2,11 @@
 .message-fields-pswd {
     display: none;
 }
+
+.error {
+    border: 1px solid red;
+}
+
+.mostra-a-mensagem-de-erro {
+    display: block;
+}
